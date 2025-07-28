@@ -1,0 +1,71 @@
+@import url('./base.css');
+
+header{   
+    background-color: #1B2239;  
+}
+
+header .row:first-child{
+    padding: 0px 16px;
+}
+
+header ul{
+    padding: 0 136.56px 0 136.55px;
+}
+
+header ul li{
+    padding: 7px 20.8px 8.5px 20px;
+}
+
+header ul li a{
+    color:#FFFFFF;
+}
+
+header #download{
+    background-color: #6962FF;
+    color: #FFFFFF;
+    border-width: 1px;
+    border-radius: 22px;
+    width: 114.41px;
+    height: 44px;
+    cursor: pointer;
+}
+
+header #sidebar {
+    display: none;
+    border: none;
+    background-color: #1B2239;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 600px){
+    header nav ul li{
+        display: none;
+    }
+
+    header .row:first-child{
+    padding: 0px;
+}
+
+    header .row{
+        flex-wrap: nowrap;
+        gap:10px;
+    }
+
+    header .container{
+        width: 100%;
+        margin: auto;
+    }
+
+    header #sidebar{
+    display: block;
+    }
+
+    header ul{
+        padding: 0px;
+    }
+
+    header ul li{
+        padding: 0px;
+    }
+}
