@@ -126,6 +126,9 @@ header #sidebar {
 
 /*,.............................Section 2.........................................*/
 
+/* .BucketListApp{
+ padding: 70px;
+} */
 .BucketListApp ul li{
  color: #FFFFFF;
  font-size: 15px;
@@ -207,9 +210,9 @@ header #sidebar {
 
 /*,.............................Section 3.........................................*/
 
-.MarkingVisted{
+/* .MarkingVisted{
     padding: 70px 0px;
-}
+} */
 
 .MarkingVisted ul li{
     color:#00BE90;
@@ -266,8 +269,12 @@ header #sidebar {
 
 /*....................................Section 4...........................................*/
 
-.PlanningTrip {
-    padding-top: 16px;
+/* .PlanningTrip {
+    padding:70x 0px;
+} */
+
+.PlanningTrip p{
+    padding: 0px 121.22px 1px 121.78px;
 }
 
 .PlanningTrip ul li{
@@ -279,7 +286,6 @@ header #sidebar {
     grid-template-columns: 1fr 1fr;
     gap: 16px;
 }
-
 
 .PlanningTrip .vistImages{
     display: grid;
@@ -293,15 +299,18 @@ header #sidebar {
     gap: 16px;
 }
 
-
 .PlanningTrip img {
     display: block;
     width: 100%;
     height: 100%;
-    border-radius: 22px;background-color: lightblue;
+    border-radius: 22px;
 }
 
 @media screen and (max-width: 800px){
+    /* .PlanningTrip {
+        padding:30x 0px;
+    } */
+
     .PlanningTrip .container{
         width: 100%;
         margin: 0px;
@@ -322,6 +331,60 @@ header #sidebar {
 
 }
 
+/*.................................Section5................................*/
+
+.Collaboration{
+    padding:70px 0px;
+}
+
+.Collaboration ul li{
+    color: #ED5B7B;
+}
+
+.Collaboration .row:first-child{
+    gap: 31px;
+}
+
+.Collaboration p{
+    padding: 0px 127.3px 1px 126.7px;
+}
+
+.Collaborationul li{
+    color: red;
+}
+
+.Collaboration .CollaborateImages{
+    padding-top: 16px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.Collaboration .CollaborateImages img{
+    width: 100%;
+    height: auto;
+    border-radius: 22px;
+}
+
+.Collaboration .CollaborateImages div{
+    padding: 0px 8px;
+}
+
+@media screen and (max-width: 800px){
+
+    .Collaboration{
+        padding:30px 0px;
+    }
+
+    .Collaboration .container{
+        width: 100%;
+        margin: 0px;
+    }
+
+    .Collaboration .CollaborateImages{
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr;
+    }
+}
 
 /*..................................Footer.....................................*/
 
