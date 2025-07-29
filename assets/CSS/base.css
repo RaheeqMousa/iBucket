@@ -14,6 +14,7 @@ h2{
 p{
     font-size: 15px;
     color: #fff;
+    text-align: center;
 }
 
 a{
@@ -48,4 +49,14 @@ ul li {
  .center-heading{
     width: 100%;
     justify-content: center;
+ }
+
+ .column-direction{
+    flex-direction: column;
+ }
+
+ .listStyle{
+    padding-top: 20px;
+    justify-content: center;
+    gap:25px;
  }
