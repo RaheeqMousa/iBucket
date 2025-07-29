@@ -196,9 +196,14 @@ header #sidebar {
  color:#6962FF;
 }
 
+.BucketListApp .row:first-child{
+ gap: 15px;
+}
+
 .BucketListApp p {
     padding: 0px 116.44px 1px 116.56px;
 }
+
 .BucketListApp h1 {
     text-align: center;
     display: flex;
@@ -286,6 +291,10 @@ header #sidebar {
     padding: 0px 116.44px 1px 116.56px;
 }
 
+.MarkingVisted .row:first-child{
+    gap:15px;
+}
+
 .MarkingVisted .visitedImages{
     padding-top:16px ;
     display: grid;
@@ -345,6 +354,9 @@ header #sidebar {
     padding: 0px 121.22px 1px 121.78px;
 }
 
+.PlanningTrip .row{
+    gap: 31px;
+}
 
 .PlanningTrip ul li{
     color: #7C57F5;
@@ -354,6 +366,7 @@ header #sidebar {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 16px;
+    padding-top: 16px;
 }
 
 .PlanningTrip .vistImages{
