@@ -386,6 +386,134 @@ header #sidebar {
     }
 }
 
+/*................................Section 6..................................*/
+
+.BucketList .BucketListImages{
+    width: 100%;
+}
+.BucketList .row :first-child{
+    gap: 32px;
+}
+
+
+.BucketList .DownloadApps {
+  position: relative;
+  width: 100%;
+  height: 400px; /* or any fixed height you want */
+  overflow: hidden;
+  border-bottom-left-radius: 22px;
+  border-bottom-right-radius: 22px;
+}
+
+.BucketList .BucketListImages{
+    padding:0px 8px;
+}
+
+.BucketList .reviews{
+    background-color: #FEF4E7;
+    border-top-right-radius: 22px;
+    border-top-left-radius: 22px;
+    width: 100%;
+    padding: 0px 36px 40px 36px;
+    box-sizing: border-box;
+}
+
+.BucketList .reviews .review{
+    width: 25%;
+    padding-top: 48px;
+}
+
+.BucketList .reviews .review p{
+    
+    color: black;
+}
+
+.BucketList .reviews .review .row.stars{
+    gap: 0px;
+    justify-content: center;
+}
+
+.BucketList .reviews .review p:last-child{
+    font-weight: bold;
+}
+
+
+.BucketList .BucketListImages .DownloadApps{
+    position: relative;
+    width: 100%;
+}
+
+.BucketList .DownloadApps .appAdd {
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 40px;
+  width: 100%;
+  height: 100%; /* to match the image height */
+  box-sizing: border-box;
+  color: white;
+ 
+}
+
+.BucketList .DownloadApps .appAdd h2,
+.BucketList .DownloadApps .appAdd p {
+  width: 50%;
+  margin: 0 0 20px;
+  text-align: left;
+}
+
+.BucketList .DownloadApps .image {
+  width: 100%;
+  height: 100%;
+}
+
+.BucketList .DownloadApps .image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  border-bottom-left-radius: 22px;
+  border-bottom-right-radius: 22px;
+}
+
+.BucketList .DownloadApps .appAdd p{
+    text-align: left;
+    padding: 0px 4px 22px 26px;
+    width: 50%;
+}
+
+.BucketList .DownloadApps .appAdd button{
+    border-radius: 30px;
+    padding: 20px 30.89px 20px 30px;
+    font-size: 17px;
+    color: #27325E;
+    cursor: pointer;
+}
+
+
+@media screen and (max-width: 1000px){
+      .BucketList .container {
+        width: 100%;
+        margin: 0px;
+      }
+      .BucketList .DownloadApps {
+    height: 500px; /* Slightly taller for stacking on mobile */
+  }
+
+  .BucketList .DownloadApps .appAdd h2,
+  .BucketList .DownloadApps .appAdd p {
+    width: 90%;
+  }
+
+  .BucketList p{
+    padding: 0px;
+ }
+
+}
+
+
+
+
 /*..................................Footer.....................................*/
 
 footer{

@@ -51,7 +51,7 @@ ul li {
     justify-content: center;
  }
 
- .column-direction{
+ .flex-column-direction{
     flex-direction: column;
  }
 
@@ -60,6 +60,7 @@ ul li {
     justify-content: center;
     gap:25px;
  }
+
 
  main > section{
     padding: 70px 0px;
