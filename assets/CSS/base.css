@@ -1,9 +1,23 @@
+body{
+    background-color: #13192F;
+}
+
+h1{
+    font-size: 56px;
+}
+
+p{
+    font-size: 15px;
+}
 
 a{
     text-decoration: none;
+    color: #fff;
 }
 
 ul{
+    margin: 0px;
+    padding: 0px;
     list-style-type:none;
 }
 
