@@ -123,11 +123,101 @@ header #sidebar {
     padding: 0px 21.02px 0px 21.98px;
 }
 
-/*..................................................*/
+
+
+/*,......................................................................*/
+
+.BucketListApp ul li{
+ color: #FFFFFF;
+ font-size: 15px;
+ color:#6962FF;
+}
+
+.BucketListApp ul {
+    padding-top: 20px;
+    justify-content: center;
+    gap:25px;
+}
+.BucketListApp p {
+    text-align: center;
+    padding: 0px 116.44px 1px 116.56px;
+}
+.BucketListApp h1 {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.BucketListApp .image-grid{
+    display: grid;
+     padding-top: 16px;
+    grid-template-columns: 1fr 1fr 2fr;
+    gap: 32px;
+}
+
+.BucketListApp .leftImages {
+    display: grid;
+    grid-template-rows: 2fr 1fr;
+    height: 100vh;
+    gap: 32px;
+}
+
+
+
+.BucketListApp .midImages {
+    display: grid;
+    grid-template-rows: 1fr 2fr;
+    height: 100vh;
+    gap: 32px;
+}
+
+
+.BucketListApp .midImages > img,
+.BucketListApp .rightImages > img {
+    height: 100%;
+}
+
+.BucketListApp img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 22px;
+}
+
+@media screen and (max-width: 800px){
+    .BucketListApp .container{
+        width: 100%;
+        margin: 0px;
+    }
+
+    .BucketListApp .leftImages {
+        display: none;
+    }
+
+    .BucketListApp .image-grid{
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr;
+        gap: 5px;
+    }
+
+    .BucketListApp .midImages {
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr;
+        height: auto;
+    }
+
+    .BucketListApp .rightImages img {
+        width: 100%;
+        height: auto;
+    }
+ 
+}
+
+/*.......................................................................*/
 
 footer{
     background-color: #27325E;
-    color: white;
 }
 
 footer .row {
@@ -136,7 +226,7 @@ footer .row {
 
 footer .copyright {
   width: 390px;
-  color: white;
+
   padding: 20px;
 }
 
@@ -160,4 +250,11 @@ footer .AppInfo ul{
   flex-direction: column;
   align-items: flex-start;
   gap: 10px;
+}
+
+@media screen and (max-width: 600px){
+    footer .container{
+        width: 100%;
+        margin: 0px;
+    }
 }

@@ -6,8 +6,14 @@ h1{
     font-size: 56px;
 }
 
+h2{
+    color: #fff;
+    font-size: 33px;
+}
+
 p{
     font-size: 15px;
+    color: #fff;
 }
 
 a{
@@ -37,4 +43,9 @@ ul li {
     align-items: center;
     flex-wrap: wrap;
     width: 100%;
+ }
+
+ .center-heading{
+    width: 100%;
+    justify-content: center;
  }
