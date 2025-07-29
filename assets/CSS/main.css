@@ -165,15 +165,14 @@ header #sidebar {
 }
 
 
-.BucketListApp .midImages > img,
+/* .BucketListApp .midImages > img,
 .BucketListApp .rightImages > img {
     height: 100%;
-}
+} */
 
 .BucketListApp img {
     width: 100%;
     height: 100%;
-    object-fit: cover;
     border-radius: 22px;
 }
 
@@ -233,15 +232,10 @@ header #sidebar {
     gap: 16px;
 }
 
-.MarkingVisted .midImages > img,
-.MarkingVisted .rightImages > img {
-    height: 100%;
-}
 
 .MarkingVisted img {
     width: 100%;
     height: 100%;
-    object-fit: cover;
     border-radius: 22px;
 }
 
@@ -269,6 +263,65 @@ header #sidebar {
     }
  
 }
+
+/*....................................Section 4...........................................*/
+
+.PlanningTrip {
+    padding-top: 16px;
+}
+
+.PlanningTrip ul li{
+    color: #7C57F5;
+}
+
+.PlanningTrip .plannedImages{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 16px;
+}
+
+
+.PlanningTrip .vistImages{
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    gap: 16px;
+}
+
+.PlanningTrip .vistPlaceImage{
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 16px;
+}
+
+
+.PlanningTrip img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    border-radius: 22px;background-color: lightblue;
+}
+
+@media screen and (max-width: 800px){
+    .PlanningTrip .container{
+        width: 100%;
+        margin: 0px;
+    }
+
+    .PlanningTrip .map{
+        display: none;
+    }
+
+    .PlanningTrip .plannedImages{
+        grid-template-rows: 1fr 1fr;
+        grid-template-columns: 1fr;
+    }
+
+    .PlanningTrip .vistPlaceImage{
+        grid-template-columns: 1fr 1fr;
+    }
+
+}
+
 
 /*..................................Footer.....................................*/
 
