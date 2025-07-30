@@ -273,10 +273,11 @@ header #sidebar {
 }
 
 
-/* .BucketListApp .midImages > img,
+
+.BucketListApp .midImages > img,
 .BucketListApp .rightImages > img {
     height: 100%;
-} */
+}
 
 .BucketListApp img {
     width: 100%;
@@ -373,7 +374,6 @@ header #sidebar {
 
     .BucketListApp .rightImages img {
         width: 100%;
-        height: auto;
     }
  
     .MarkingVisted p {
@@ -693,7 +693,6 @@ footer .AppInfo {
   flex: 1;
   color: white;
   padding: 20px;
-
 }
 
 footer strong{
@@ -744,7 +743,6 @@ footer .AppInfo .languages ul li img{
     footer .AppInfo {
         padding: 0px;
     }
-
 
     footer .AppInfo.row{
         flex-wrap: wrap;
