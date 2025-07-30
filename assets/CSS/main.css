@@ -5,13 +5,7 @@ header{
     opacity: 1;
 }
 
-/* header .row:first-child{
-    padding: 0px 16px;
-} */
 
-/* header ul{
-    padding: 0 136.56px;
-} */
 
 header ul li{
     padding: 7px 20.8px 8.5px 20px;
@@ -147,13 +141,11 @@ header #sidebar {
     padding: 0px 21.02px 0px 21.98px;
 }
 
-.frontImage img{
-    width: 100%;
-}
+
+
+
 @media screen and (max-width: 800px){
-    /* .AchieveGoals .container{
-        margin: 0px;
-    } */
+
 
     .AchieveGoals .Introduce .darkWrapperImage {
         top: -50px;
@@ -177,13 +169,22 @@ header #sidebar {
         padding: 0px 28.97px 0px 29.03px;
     }
 
+    .frontImage{
+        overflow: hidden;
+    }
+
+    .frontImage img{
+        width: 100%;
+        height: 200px;
+    }
+
 }
 
 /*...........................................................*/
 
 .leurals{
     padding: 0px 154.59px 20px 154.59px;
-    /* margin-top: 100px; */
+    
 }
 
 .leurals .row{
@@ -207,10 +208,10 @@ header #sidebar {
 
 
 @media screen and (max-width: 800px) {
-    /* .leurals .container{
-        width: 100%;
-        margin: 0px;
-    } */
+    .leurals {
+        padding: 0px;
+    }
+
     .leurals > .row{
         flex-direction: column;
         align-items: center;
@@ -233,9 +234,7 @@ header #sidebar {
 
 /*,.............................Section 2.........................................*/
 
-/* .BucketListApp{
- padding: 70px;
-} */
+
 .BucketListApp ul li{
  color: #FFFFFF;
  font-size: 15px;
@@ -273,10 +272,12 @@ header #sidebar {
 }
 
 
-/* .BucketListApp .midImages > img,
+
+.BucketListApp .midImages > img,
 .BucketListApp .rightImages > img {
     height: 100%;
-} */
+    
+}
 
 .BucketListApp img {
     width: 100%;
@@ -284,42 +285,53 @@ header #sidebar {
     border-radius: 22px;
 }
 
-@media screen and (max-width: 800px){
-    /* .BucketListApp .container{
-        width: 100%;
-        margin: 0px;
-    } */
+@media screen and (max-width: 800px) {
+  .BucketListApp .leftImages {
+    display: none;
+  }
 
-    .BucketListApp .leftImages {
-        display: none;
-    }
+  .BucketListApp .image-grid {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto;
+    gap: 5px;
+  }
 
-    .BucketListApp .image-grid{
-        grid-template-columns: 1fr;
-        grid-template-rows: 1fr 1fr;
-        gap: 5px;
-    }
+  .BucketListApp .midImages {
+    grid-template-columns: 1fr 1fr;
+    width: 100%;
+    height: 300px;
+    overflow: hidden;
+  }
 
-    .BucketListApp .midImages {
-        grid-template-columns: 1fr 1fr;
-        grid-template-rows: 1fr;
-    }
+  .BucketListApp .rightImages {
+    width: 100%;
+    height: 600px;
+    overflow: hidden;
+  }
 
-    /* .BucketListApp .rightImages img {
-        width: 100%;
-        height: auto;
-    } */
- 
-    .BucketListApp p {
-        padding: 0px 29.03px 0px 28.97px;
-    }
+  .BucketListApp .midImages img,
+  .BucketListApp .rightImages img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .BucketListApp p {
+    padding: 0px 29.03px 0px 28.97px;
+  }
 }
+
+@media screen and (max-width: 800px) {
+  .BucketListApp .midImages {
+    height: 200px;
+  }
+
+}
+
 
 /*,.............................Section 3.........................................*/
 
-/* .MarkingVisted{
-    padding: 70px 0px;
-} */
+
 
 .MarkingVisted ul li{
     color:#00BE90;
@@ -354,10 +366,6 @@ header #sidebar {
 }
 
 @media screen and (max-width: 800px){
-    /* .MarkingVisted .container{
-        width: 100%;
-        margin: 0px;
-    } */
 
     .MarkingVisted .visitedImages{
         grid-template-columns: 1fr;
@@ -373,20 +381,16 @@ header #sidebar {
 
     .BucketListApp .rightImages img {
         width: 100%;
-        height: auto;
     }
  
     .MarkingVisted p {
-    padding: 0px 25.53px 0px 24.47px;
-}
+        padding: 0px 25.53px 0px 24.47px;
+    }
 
 }
 
 /*....................................Section 4...........................................*/
 
-/* .PlanningTrip {
-    padding:70x 0px;
-} */
 
 .PlanningTrip p{
     padding: 0px 121.22px 1px 121.78px;
@@ -428,38 +432,45 @@ header #sidebar {
 
 }
 
-@media screen and (max-width: 800px){
-    /* .PlanningTrip {
-        padding:30x 0px;
-    } */
-
-    .PlanningTrip p{
+@media screen and (max-width: 800px) {
+  .PlanningTrip p {
     padding: 0px 27.16px 0px 26.84px;
+  }
 
-}
+  .PlanningTrip .map {
+    display: none;
+  }
 
-    /* .PlanningTrip .container{
-        width: 100%;
-        margin: 0px;
-    } */
+  .PlanningTrip .plannedImages {
+    grid-template-columns: 1fr;
+    grid-template-rows: 500px auto;
+  }
 
-    .PlanningTrip .map{
-        display: none;
-    }
+  .PlanningTrip .vistImages {
+    grid-template-rows: 1fr;
+  }
 
-    .PlanningTrip .plannedImages{
-        grid-template-rows: 1fr 1fr;
-        grid-template-columns: 1fr;
-    }
-
-    .PlanningTrip .vistPlaceImage{
+  .PlanningTrip .vistPlaceImage {
         grid-template-columns: 1fr 1fr;
     }
 
-    .PlanningTrip .vistImages{
-        grid-template-rows: 1fr;
-    }
+  .PlanningTrip .nowTravelling,.PlanningTrip .vistPlaceImage div {
+    overflow: hidden;
+  }
+
+  .PlanningTrip .vistPlaceImage img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .PlanningTrip .nowTravelling img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+  }
 }
+
 
 /*.................................Section5................................*/
 
@@ -506,10 +517,6 @@ header #sidebar {
         padding:30px 0px;
     }
 
-    /* .Collaboration .container{
-        width: 100%;
-        margin: 0px;
-    } */
 
     .Collaboration .CollaborateImages{
         grid-template-columns: 1fr;
@@ -534,7 +541,7 @@ header #sidebar {
 .BucketList .DownloadApps {
   position: relative;
   width: 100%;
-  height: 400px; /* or any fixed height you want */
+  height: 400px;
   overflow: hidden;
   border-bottom-left-radius: 22px;
   border-bottom-right-radius: 22px;
@@ -580,7 +587,7 @@ header #sidebar {
   left: 0;
   padding: 40px;
   width: 100%;
-  height: 100%; /* to match the image height */
+  height: 100%; 
   box-sizing: border-box;
   color: white;
  
@@ -622,12 +629,9 @@ header #sidebar {
 
 
 @media screen and (max-width: 1000px){
-      /* .BucketList .container {
-        width: 100%;
-        margin: 0px;
-      } */
+
       .BucketList .DownloadApps {
-        height: 500px; /* Slightly taller for stacking on mobile */
+        height: 500px; 
     }
 
   .BucketList .DownloadApps .appAdd h2,
@@ -657,8 +661,7 @@ footer{
 
 footer p{
     text-align: left;
-    /* width: 50%;
- */
+
 }
 
 footer .row{
@@ -693,7 +696,6 @@ footer .AppInfo {
   flex: 1;
   color: white;
   padding: 20px;
-
 }
 
 footer strong{
@@ -728,10 +730,7 @@ footer .AppInfo .languages ul li img{
 
 
 @media screen and (max-width: 800px){
-    /* footer .container{
-        width: 100%;
-        margin: 0px;
-    } */
+
 
     footer p{
         width: 100%;
@@ -744,7 +743,6 @@ footer .AppInfo .languages ul li img{
     footer .AppInfo {
         padding: 0px;
     }
-
 
     footer .AppInfo.row{
         flex-wrap: wrap;
