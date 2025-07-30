@@ -2,16 +2,16 @@
 
 header{   
     background-color: #1B2239; 
-
+    opacity: 1;
 }
 
-header .row:first-child{
+/* header .row:first-child{
     padding: 0px 16px;
-}
+} */
 
-header ul{
-    padding: 0 136.56px 0 136.55px;
-}
+/* header ul{
+    padding: 0 136.56px;
+} */
 
 header ul li{
     padding: 7px 20.8px 8.5px 20px;
@@ -75,24 +75,52 @@ header #sidebar {
 }
 
 .AchieveGoals h1{
-    width: 60%;
+    width: 90%;
     text-align: center;
-    padding: 0px 40px;
 }
 
-.AchieveGoals .Introduce{
-    position: relative;
-    /* bottom: 350px; */
-    height: auto;
+.AchieveGoals .Introduce {
+  position: relative;
+  padding-top: 100px;
+  overflow: visible;
+  max-width: 1096px;
+  margin: 0 auto;
 }
 
-
-.AchieveGoals .Introduce .IntroduceInfo{
-    position: absolute;
-    margin-top: 5px;
-    top:0;
-    
+.AchieveGoals .Introduce .darkWrapperImage {
+  position: absolute;
+  top: -150px;
+  left: 0;
+  width: 100%;
+  height: auto;
+  z-index: 0;
+  pointer-events: none;
 }
+
+.AchieveGoals .Introduce .IntroduceInfo {
+  position: relative;
+  z-index: 1;
+  margin: 0 auto;
+  max-width: 900px;
+  top: -150px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 0px 16px;
+}
+
+.IntroduceInfo .Info {
+  padding: 60px 157px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 28px;
+  width: 100%;
+  max-width: 1064px;
+  box-sizing: border-box;
+}
+
 
 .IntroduceInfo span:first-child{
     border-radius: 22px;
@@ -102,9 +130,6 @@ header #sidebar {
     padding: 5px 18.27px 5px 18px;
 }
 
-.IntroduceInfo.row{
-    flex-direction: column;
-}
 
 .IntroduceInfo button{
     background-color: #6962FF;
@@ -122,28 +147,43 @@ header #sidebar {
     padding: 0px 21.02px 0px 21.98px;
 }
 
+.frontImage img{
+    width: 100%;
+}
 @media screen and (max-width: 800px){
-    .AchieveGoals .container{
-        width: 100%;
+    /* .AchieveGoals .container{
         margin: 0px;
+    } */
+
+    .AchieveGoals .Introduce .darkWrapperImage {
+        top: -50px;
+    }
+    
+    .AchieveGoals h1{
+        width: 100%;
     }
 
     .AchieveGoals img{
         width: 100%;
     }
 
-    .IntroduceInfo.row p{
-    font-size: 15px;
-    width: 60%;
-    padding: 0px 28.97px 0px 29.03px;
+    .IntroduceInfo .Info {
+        padding: 30px 20px;
     }
+
+    .IntroduceInfo.row p{
+        font-size: 15px;
+        width: 60%;
+        padding: 0px 28.97px 0px 29.03px;
+    }
+
 }
 
 /*...........................................................*/
 
 .leurals{
     padding: 0px 154.59px 20px 154.59px;
-    margin-top: 100px;
+    /* margin-top: 100px; */
 }
 
 .leurals .row{
@@ -161,17 +201,21 @@ header #sidebar {
     flex-wrap: nowrap;
 }
 
+.leaural img{
+    object-fit: none;
+}
 
-@media screen and (max-width: 600px) {
-    .leurals .container{
+
+@media screen and (max-width: 800px) {
+    /* .leurals .container{
         width: 100%;
         margin: 0px;
-    }
-    .leurals {
+    } */
+    .leurals > .row{
         flex-direction: column;
         align-items: center;
-        padding: 0px 86.5px 20px 86.5pxpx;
-        margin-top: 40px;
+        padding: 0px 86.5px 20px 86.5px;
+        gap: 20px;
     }
 
     .leurals .row{
@@ -182,6 +226,8 @@ header #sidebar {
         width: 100%;
         max-width: 300px;
     }
+
+
 }
 
 
@@ -202,13 +248,6 @@ header #sidebar {
 
 .BucketListApp p {
     padding: 0px 116.44px 1px 116.56px;
-}
-
-.BucketListApp h1 {
-    text-align: center;
-    display: flex;
-    justify-content: center;
-    align-items: center;
 }
 
 .BucketListApp .image-grid{
@@ -246,10 +285,10 @@ header #sidebar {
 }
 
 @media screen and (max-width: 800px){
-    .BucketListApp .container{
+    /* .BucketListApp .container{
         width: 100%;
         margin: 0px;
-    }
+    } */
 
     .BucketListApp .leftImages {
         display: none;
@@ -264,17 +303,16 @@ header #sidebar {
     .BucketListApp .midImages {
         grid-template-columns: 1fr 1fr;
         grid-template-rows: 1fr;
-        height: auto;
     }
 
-    .BucketListApp .rightImages img {
+    /* .BucketListApp .rightImages img {
         width: 100%;
         height: auto;
-    }
+    } */
  
     .BucketListApp p {
-    padding: 0px 29.03px 0px 28.97px;
-}
+        padding: 0px 29.03px 0px 28.97px;
+    }
 }
 
 /*,.............................Section 3.........................................*/
@@ -316,10 +354,10 @@ header #sidebar {
 }
 
 @media screen and (max-width: 800px){
-    .MarkingVisted .container{
+    /* .MarkingVisted .container{
         width: 100%;
         margin: 0px;
-    }
+    } */
 
     .MarkingVisted .visitedImages{
         grid-template-columns: 1fr;
@@ -369,15 +407,16 @@ header #sidebar {
     padding-top: 16px;
 }
 
-.PlanningTrip .vistImages{
-    display: grid;
-    grid-template-rows: 1fr 1fr;
-    gap: 16px;
-}
 
 .PlanningTrip .vistPlaceImage{
     display: grid;
     grid-template-columns: 2fr 1fr;
+    gap: 16px;
+}
+
+.PlanningTrip .vistImages{
+    display: grid;
+    grid-template-rows: 1fr 2fr;
     gap: 16px;
 }
 
@@ -386,6 +425,7 @@ header #sidebar {
     width: 100%;
     height: 100%;
     border-radius: 22px;
+
 }
 
 @media screen and (max-width: 800px){
@@ -395,12 +435,13 @@ header #sidebar {
 
     .PlanningTrip p{
     padding: 0px 27.16px 0px 26.84px;
+
 }
 
-    .PlanningTrip .container{
+    /* .PlanningTrip .container{
         width: 100%;
         margin: 0px;
-    }
+    } */
 
     .PlanningTrip .map{
         display: none;
@@ -415,6 +456,9 @@ header #sidebar {
         grid-template-columns: 1fr 1fr;
     }
 
+    .PlanningTrip .vistImages{
+        grid-template-rows: 1fr;
+    }
 }
 
 /*.................................Section5................................*/
@@ -462,10 +506,10 @@ header #sidebar {
         padding:30px 0px;
     }
 
-    .Collaboration .container{
+    /* .Collaboration .container{
         width: 100%;
         margin: 0px;
-    }
+    } */
 
     .Collaboration .CollaborateImages{
         grid-template-columns: 1fr;
@@ -494,10 +538,6 @@ header #sidebar {
   overflow: hidden;
   border-bottom-left-radius: 22px;
   border-bottom-right-radius: 22px;
-}
-
-.BucketList .BucketListImages{
-    padding:0px 8px;
 }
 
 .BucketList .reviews{
@@ -561,7 +601,6 @@ header #sidebar {
 .BucketList .DownloadApps .image img {
   width: 100%;
   height: 100%;
-  object-fit: cover;
   display: block;
   border-bottom-left-radius: 22px;
   border-bottom-right-radius: 22px;
@@ -583,13 +622,13 @@ header #sidebar {
 
 
 @media screen and (max-width: 1000px){
-      .BucketList .container {
+      /* .BucketList .container {
         width: 100%;
         margin: 0px;
-      }
+      } */
       .BucketList .DownloadApps {
-    height: 500px; /* Slightly taller for stacking on mobile */
-  }
+        height: 500px; /* Slightly taller for stacking on mobile */
+    }
 
   .BucketList .DownloadApps .appAdd h2,
   .BucketList .DownloadApps .appAdd p {
@@ -599,6 +638,11 @@ header #sidebar {
   .BucketList p{
     padding: 0px;
  }
+
+ .BucketList .reviews .review{
+    padding-top: 20px;
+}
+
 
 }
 
@@ -611,14 +655,34 @@ footer{
     background-color: #27325E;
 }
 
-footer .row {
+footer p{
+    text-align: left;
+    /* width: 50%;
+ */
+}
+
+footer .row{
   gap: 20px;
 }
 
 footer .copyright {
   width: 390px;
+  padding-bottom: 16px;
+  align-items: flex-start;
+  height: 250px;
+}
 
-  padding: 20px;
+footer .copyright.row {
+  justify-content: flex-start;
+  gap: 10px
+}
+
+footer .copyright img{
+  top: -10px;
+}
+
+footer .copyright p{
+  padding-right: 19px;
 }
 
 footer .copyright span{
@@ -638,14 +702,55 @@ footer strong{
 }
 
 footer .AppInfo ul{
-  flex-direction: column;
   align-items: flex-start;
   gap: 10px;
 }
 
-@media screen and (max-width: 600px){
-    footer .container{
+footer .AppInfo .About{
+    padding:0px 12px 29px 12px; 
+}
+
+footer .AppInfo .social{
+    padding:0px 12px 29px 12px; 
+}
+
+footer .AppInfo .About{
+    padding:0px 12px 29px 12px; 
+}
+
+footer .AppInfo .languages{
+    padding:0px 12px; 
+}
+
+footer .AppInfo .languages ul li img{
+  margin-right: 10px;
+}
+
+
+@media screen and (max-width: 800px){
+    /* footer .container{
         width: 100%;
         margin: 0px;
+    } */
+
+    footer p{
+        width: 100%;
+    }
+
+    footer .copyright{
+        width: 100%;
+    }
+
+    footer .AppInfo {
+        padding: 0px;
+    }
+
+
+    footer .AppInfo.row{
+        flex-wrap: wrap;
+    }
+
+    footer ul{
+        padding-bottom: 16px;
     }
 }
