@@ -207,10 +207,10 @@ header #sidebar {
 
 
 @media screen and (max-width: 800px) {
-    /* .leurals .container{
-        width: 100%;
-        margin: 0px;
-    } */
+    .leurals {
+        padding: 0px;
+    }
+
     .leurals > .row{
         flex-direction: column;
         align-items: center;
@@ -277,6 +277,7 @@ header #sidebar {
 .BucketListApp .midImages > img,
 .BucketListApp .rightImages > img {
     height: 100%;
+    
 }
 
 .BucketListApp img {
@@ -285,36 +286,51 @@ header #sidebar {
     border-radius: 22px;
 }
 
-@media screen and (max-width: 800px){
-    /* .BucketListApp .container{
-        width: 100%;
-        margin: 0px;
-    } */
+@media screen and (max-width: 800px) {
+  .BucketListApp .leftImages {
+    display: none;
+  }
 
-    .BucketListApp .leftImages {
-        display: none;
-    }
+  .BucketListApp .image-grid {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto;
+    gap: 5px;
+  }
 
-    .BucketListApp .image-grid{
-        grid-template-columns: 1fr;
-        grid-template-rows: 1fr 1fr;
-        gap: 5px;
-    }
+  .BucketListApp .midImages {
+    grid-template-columns: 1fr 1fr;
+    width: 100%;
+    height: 300px;
+    overflow: hidden;
+  }
 
-    .BucketListApp .midImages {
-        grid-template-columns: 1fr 1fr;
-        grid-template-rows: 1fr;
-    }
+  .BucketListApp .rightImages {
+    width: 100%;
+    height: 600px;
+    overflow: hidden;
+  }
 
-    /* .BucketListApp .rightImages img {
-        width: 100%;
-        height: auto;
-    } */
- 
-    .BucketListApp p {
-        padding: 0px 29.03px 0px 28.97px;
-    }
+  .BucketListApp .midImages img,
+  .BucketListApp .rightImages img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+  }
+
+  .BucketListApp p {
+    padding: 0px 29.03px 0px 28.97px;
+  }
 }
+
+@media screen and (max-width: 800px) {
+
+  .BucketListApp .midImages {
+    height: 200px;
+  }
+
+}
+
 
 /*,.............................Section 3.........................................*/
 
@@ -355,10 +371,6 @@ header #sidebar {
 }
 
 @media screen and (max-width: 800px){
-    /* .MarkingVisted .container{
-        width: 100%;
-        margin: 0px;
-    } */
 
     .MarkingVisted .visitedImages{
         grid-template-columns: 1fr;
@@ -377,8 +389,8 @@ header #sidebar {
     }
  
     .MarkingVisted p {
-    padding: 0px 25.53px 0px 24.47px;
-}
+        padding: 0px 25.53px 0px 24.47px;
+    }
 
 }
 
@@ -428,38 +440,48 @@ header #sidebar {
 
 }
 
-@media screen and (max-width: 800px){
-    /* .PlanningTrip {
-        padding:30x 0px;
-    } */
-
-    .PlanningTrip p{
+@media screen and (max-width: 800px) {
+  .PlanningTrip p {
     padding: 0px 27.16px 0px 26.84px;
+  }
 
+  .PlanningTrip .map {
+    display: none;
+  }
+
+  .PlanningTrip .plannedImages {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto;
+  }
+
+  .PlanningTrip .vistImages {
+    grid-template-rows: 1fr;
+  }
+
+  .PlanningTrip .vistPlaceImage {
+    grid-template-columns: auto auto;
+  }
+
+  .PlanningTrip .vistPlaceImage div {
+    height: 300px;
+    overflow: hidden;
+  }
+
+  .PlanningTrip .vistPlaceImage img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+  }
+
+  .PlanningTrip .nowTravelling img {
+    height: 500px;
+    width: 100%;
+    object-fit: cover;
+    display: block;
+  }
 }
 
-    /* .PlanningTrip .container{
-        width: 100%;
-        margin: 0px;
-    } */
-
-    .PlanningTrip .map{
-        display: none;
-    }
-
-    .PlanningTrip .plannedImages{
-        grid-template-rows: 1fr 1fr;
-        grid-template-columns: 1fr;
-    }
-
-    .PlanningTrip .vistPlaceImage{
-        grid-template-columns: 1fr 1fr;
-    }
-
-    .PlanningTrip .vistImages{
-        grid-template-rows: 1fr;
-    }
-}
 
 /*.................................Section5................................*/
 
