@@ -266,24 +266,33 @@ header #sidebar {
     display: grid;
     gap: 16px;
     max-height: 500px;
+}
+
+.BucketListApp .midImages div,
+.BucketListApp .rightImages div {
     overflow: hidden;
 }
 
+.BucketListApp .rightImages div{
+    height: 400px;
+}
+
 .BucketListApp .leftImages {
-    grid-template-rows: 3fr 1fr;
+    grid-template-rows: 2fr 1fr;
 }
 
 .BucketListApp .midImages {
-    grid-template-rows: 1fr 3fr;
+    grid-template-rows: 1fr 2fr;
 }
 
 .BucketListApp .leftImages img,
 .BucketListApp .midImages img,
-.BucketListApp .rightImages > img {
+.BucketListApp .rightImages img {
     width: 100%;
     height: 100%;
     object-fit: cover;
     border-radius: 22px;
+   
 }
 
 
@@ -296,18 +305,17 @@ header #sidebar {
         grid-template-columns: 1fr;
         grid-template-rows: auto;
         gap: 5px;
-        height: auto;
     }
 
     .BucketListApp .midImages {
         grid-template-columns: 1fr 1fr;
         grid-template-rows: 1fr;
-        height: 200px;
+        /* height: 200px; */
     }
 
-    .BucketListApp .rightImages {
-        height: auto;
-    }
+    /* .BucketListApp .rightImages {
+        height: 100%;
+    } */
 
     .BucketListApp p {
         padding: 0px 29.03px 0px 28.97px;
@@ -315,9 +323,12 @@ header #sidebar {
 }
 
 @media screen and (max-width: 600px) {
-    .BucketListApp .midImages {
-        height: 100%;
-        width: 100%;
+    .BucketListApp .midImages  div{
+        height: 120px;
+    }
+
+    .BucketListApp .rightImages div{
+        height: 280px;
     }
 }
 
@@ -346,7 +357,15 @@ header #sidebar {
 }
 
 .MarkingVisted .visitedImages .wrapperImage{
-    max-height:500px ;
+    max-height:500px;
+}
+
+.MarkingVisted .visitedImages .wrapperImage:first-of-type{
+    overflow: hidden;
+}
+
+.MarkingVisted .visitedImages .wrapperImage div{
+    overflow: hidden;
 }
 
 .MarkingVisted .vistImages{
@@ -374,23 +393,40 @@ header #sidebar {
         grid-template-rows: 1fr;
         gap: 16px;
     }
-
-    .BucketListApp .rightImages img {
-        width: 100%;
-    }
- 
     .MarkingVisted p {
         padding: 0px 25.53px 0px 24.47px;
     }
-
 }
+
+@media screen and (max-width: 600px){
+    .MarkingVisted .visitedImages .wrapperImage:first-of-type{
+    height: 280px;
+}
+
+.MarkingVisted .visitedImages .wrapperImage div{
+    height: 120px;
+}
+}
+
 
 /*....................................Section 4...........................................*/
 
+.PlanningTrip{
+    padding: 30px 0px;
+}
 
 .PlanningTrip p{
     padding: 0px 121.22px 1px 121.78px;
 }
+
+ .PlanningTrip .plannedImages div.nowTravelling,.PlanningTrip .map, .vistImages .vistPlaceImage div{
+    overflow: hidden;
+  }
+
+.PlanningTrip .nowTravelling,.vistImages {
+    max-height: 500px;
+  }
+
 
 .PlanningTrip .row{
     gap: 31px;
@@ -405,14 +441,16 @@ header #sidebar {
     grid-template-columns: 1fr 1fr;
     gap: 16px;
     padding-top: 16px;
+}
 
+.PlanningTrip .vistPlaceImage div{
+    height: 180px;
 }
 
 .PlanningTrip .vistPlaceImage,
 .PlanningTrip .vistImages{
     display: grid;
     gap: 16px;
-    
 }
 
 .PlanningTrip .vistPlaceImage{
@@ -443,7 +481,6 @@ header #sidebar {
 
   .PlanningTrip .plannedImages {
     grid-template-columns: 1fr;
-    grid-template-rows: 500px auto;
   }
 
   .PlanningTrip .vistImages {
@@ -453,30 +490,29 @@ header #sidebar {
 
   .PlanningTrip .vistPlaceImage {
         grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr;
     }
 
-  .PlanningTrip .nowTravelling,.PlanningTrip .vistPlaceImage div {
-    overflow: hidden;
-  }
+}
 
-  .PlanningTrip .vistPlaceImage img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-  }
+@media screen and (max-width: 600px){
 
-  .PlanningTrip .nowTravelling img {
-    height: 100%;
-    width: 100%;
-    object-fit: cover;
-  }
+    .PlanningTrip .plannedImages .nowTravelling{
+        height: 480px;
+    }
+
+    .vistImages .vistPlaceImage div{
+        height: 120px;
+    }
+
+
 }
 
 
 /*.................................Section5................................*/
 
 .Collaboration{
-    padding:70px 0px;
+    padding:30px 0px;
 }
 
 .Collaboration ul li{
@@ -778,6 +814,11 @@ footer .AppInfo .languages ul li img{
         width: 100%;
     }
 
+    footer .footerImageWrapper{
+        overflow: hidden;
+        height: 600px;
+    }
+
     footer .copyright{
         width: 100%;
     }
@@ -792,14 +833,6 @@ footer .AppInfo .languages ul li img{
 
     footer ul{
         padding-bottom: 16px;
-    }
-}
-
-@media screen and (max-width: 1000px){
-
-    footer .footerImageWrapper{
-        overflow: hidden;
-        height: 600px;
     }
 }
 
