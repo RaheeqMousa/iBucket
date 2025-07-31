@@ -270,11 +270,11 @@ header #sidebar {
 }
 
 .BucketListApp .leftImages {
-    grid-template-rows: 2fr 1fr;
+    grid-template-rows: 3fr 1fr;
 }
 
 .BucketListApp .midImages {
-    grid-template-rows: 1fr 2fr;
+    grid-template-rows: 1fr 3fr;
 }
 
 .BucketListApp .leftImages img,
@@ -326,7 +326,6 @@ header #sidebar {
 /*,.............................Section 3.........................................*/
 
 
-
 .MarkingVisted ul li{
     color:#00BE90;
 }
@@ -342,15 +341,18 @@ header #sidebar {
 .MarkingVisted .visitedImages{
     padding-top:16px ;
     display: grid;
+    grid-template-columns: 3fr 1fr;
     gap: 16px;
 }
 
-.MarkingVisted .visitedImages{
-    grid-template-columns: 3fr 1fr;
+.MarkingVisted .visitedImages .wrapperImage{
+    max-height:500px ;
 }
 
 .MarkingVisted .vistImages{
+    display: grid;
     grid-template-rows: 2fr 1fr;
+    gap: 16px;
 }
 
 .MarkingVisted img {
@@ -405,7 +407,6 @@ header #sidebar {
     padding-top: 16px;
 
 }
-
 
 .PlanningTrip .vistPlaceImage,
 .PlanningTrip .vistImages{
@@ -524,8 +525,8 @@ header #sidebar {
     }
 
     .Collaboration p{
-    padding: 0px 36.73px 0px 36.27px;
-}
+        padding: 0px 36.73px 0px 36.27px;
+    }
 }
 
 /*................................Section 6..................................*/
@@ -747,12 +748,13 @@ footer .AppInfo ul{
   gap: 10px;
 }
 
-footer .AppInfo .About{
-    padding:0px 12px 29px 12px; 
+footer .AppInfo ul li{
+  align-items: flex-start;
+  gap: 10px;
 }
 
-footer .AppInfo .social{
-    padding:0px 12px 29px 12px; 
+footer .AppInfo .About,footer .AppInfo .social{
+    padding:0px 12px 29px 12px;  
 }
 
 footer .AppInfo .About{
@@ -766,6 +768,8 @@ footer .AppInfo .languages{
 footer .AppInfo .languages ul li img{
   margin-right: 10px;
 }
+
+
 
 
 @media screen and (max-width: 800px){
