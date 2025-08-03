@@ -3,6 +3,8 @@
 header{   
     background-color: #1B2239; 
     opacity: 1;
+    z-index: 500;
+    position: sticky;
 }
 
 
