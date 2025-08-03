@@ -98,7 +98,15 @@ ul li {
     gap:25px;
  }
 
- main > section{
+.bigImgMobileStyle{
+    padding: 16px 8px 0px 8px;
+}
+
+.smallImgMobileStyle{
+    padding:0px 8px;
+}
+
+main > section{
     padding: 70px 0px;
  }
 
