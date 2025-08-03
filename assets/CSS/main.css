@@ -266,7 +266,6 @@ header #sidebar {
 .BucketListApp .midImages,
 .BucketListApp .rightImages {
     display: grid;
-    gap: 16px;
     max-height: 500px;
 }
 
@@ -296,6 +295,7 @@ header #sidebar {
     border-radius: 22px;
    
 }
+
 
 
 @media screen and (max-width: 800px) {
@@ -332,6 +332,7 @@ header #sidebar {
     .BucketListApp .rightImages div{
         height: 280px;
     }
+
 }
 
 
@@ -373,7 +374,6 @@ header #sidebar {
 .MarkingVisted .vistImages{
     display: grid;
     grid-template-rows: 2fr 1fr;
-    gap: 16px;
 }
 
 .MarkingVisted img {
@@ -393,7 +393,6 @@ header #sidebar {
     .MarkingVisted .vistImages{
         grid-template-columns: 1fr 1fr;
         grid-template-rows: 1fr;
-        gap: 16px;
     }
     .MarkingVisted p {
         padding: 0px 25.53px 0px 24.47px;
@@ -452,7 +451,6 @@ header #sidebar {
 .PlanningTrip .vistPlaceImage,
 .PlanningTrip .vistImages{
     display: grid;
-    gap: 16px;
 }
 
 .PlanningTrip .vistPlaceImage{
@@ -538,6 +536,7 @@ header #sidebar {
     padding-top: 16px;
     display: grid;
     grid-template-columns: 1fr 1fr;
+    gap: 16px;
 }
 
 .Collaboration .CollaborateImages img{
