@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+*{
+    padding: 0px;
+    margin: 0px;
+    
+}
+
+:root{
+    --mainFont:'Inter', 'Times New Roman';
+}
+
+body{
+    background-color: #13192F;
+    font-family: var(--mainFont);
+}
+
+h1,h2{
+    font-weight: 700;
+}
+
+h1{
+    font-size: 56px;
+    width: 750px;
+    max-width: 750px;
+    margin: 0 auto;
+    line-height: 72px;
+}
+
+h2{
+    color: #fff;
+    font-size: 33px;
+    text-align: center;
+    line-height: 43px;
+}
+
+img{
+
+  object-fit: cover;
+}
+
+p{
+    font-size: 15px;
+    color: #fff;
+    text-align: center;
+    font-weight: 400;
+    line-height: 26px;
+}
+
+button {
+  border: none;
+}
+
+
+a{
+    text-decoration: none;
+    color: #fff;
+}
+
+ul{
+    margin: 0px;
+    padding: 0px;
+    list-style-type:none;
+}
+
+ul li {
+    list-style:none;
+    font-weight: 500;
+    line-height: 19.5px;
+ }
+
+ .container{
+    width: 100%;
+    max-width: 944px;
+    margin: auto;
+ }
+
+ .row{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 100%;
+ }
+
+ .center-heading{
+    width: 100%;
+    justify-content: center;
+ }
+
+ .flex-column-direction{
+    flex-direction: column;
+ }
+
+ .listStyle{
+    padding-top: 20px;
+    justify-content: center;
+    gap:25px;
+ }
+
+.bigImgStyle{
+    padding: 16px 8px 0px 8px;
+}
+
+.smallImgStyle{
+    padding:0px 8px;
+}
+
+main > section{
+    padding: 70px 0px;
+ }
+
+ @media screen and (max-width: 800px){
+    main > section{
+        padding: 30px 0px;
+    }
+
+    .container {
+        width: 90%;
+    }
+
+    h1{
+        font-size: 28px;
+    }
+
+    h2{
+        font-size: 24px;
+    }
+}
