@@ -48,11 +48,6 @@ header #sidebar i{
         gap:10px;
     }
 
-    header .container{
-        width: 100%;
-        margin: auto;
-    }
-
     header #sidebar{
     display: block;
     }
