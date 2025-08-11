@@ -9,7 +9,9 @@ body{
     font-family: var(--mainFont);
     padding: 0px;
     margin: 0px;
-
+    display: flex;
+    align-items: center;
+    flex-direction: column;
 }
 
 h1,h2{
@@ -67,10 +69,7 @@ ul li {
  }
 
  .container{
-   position: relative;
-  left: 50%;
-  transform: translateX(-50%);
-  width: 100%;
+
   max-width: 944px;
  }
 
